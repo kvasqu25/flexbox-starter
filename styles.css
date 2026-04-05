@@ -223,20 +223,23 @@ main > section{
 
 /* STARTING SECTION STYLES */
 #starting div{
-    /* TO DO: Use flexbox to adjust the display of this div: content should wrap, justify with space between the elements, and include a gap of 16 pixels */
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
 }
 
 #starting section{
-    /* TO DO: Use flexbox to adjust the display of this section. Contents should display in a column, do not need to wrap, and should have a gap of 1rem between the items */
-    
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
     max-width: 525px;
     margin: 0 auto;
 }
 
 #starting img{
-    /* TO DO: Use the order property to adjust the display in the sections here so that the images appear before the heading */
-	
+    order: -1;
 }
 
 #starting p{
